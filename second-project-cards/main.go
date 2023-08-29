@@ -32,7 +32,7 @@ func main() {
 	cardsDeck = append(cardsDeck, "six of Clubes")
 
 	cardsDeck.print()
-
+	// use the prepared deck
 	fmt.Println("--------------------------")
 	newCardsDeck := newDeck()
 	newCardsDeck.print()
@@ -44,6 +44,8 @@ func main() {
 	remainingCards.print()
 
 	fmt.Println(newCardsDeck.toString())
+	// write to file
+	hand.saveToFile("my_cards.txt")
 
 }
 
