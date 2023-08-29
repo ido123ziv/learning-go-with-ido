@@ -43,6 +43,8 @@ func main() {
 	fmt.Println("Remaining: ")
 	remainingCards.print()
 
+	fmt.Println(newCardsDeck.toString())
+
 }
 
 func newCard() string {
