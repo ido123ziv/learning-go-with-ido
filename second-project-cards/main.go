@@ -37,6 +37,12 @@ func main() {
 	newCardsDeck := newDeck()
 	newCardsDeck.print()
 
+	hand, remainingCards := deal(newCardsDeck, 5)
+	fmt.Println("Hand: ")
+	hand.print()
+	fmt.Println("Remaining: ")
+	remainingCards.print()
+
 }
 
 func newCard() string {
