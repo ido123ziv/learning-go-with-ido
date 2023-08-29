@@ -32,6 +32,11 @@ func main() {
 	cardsDeck = append(cardsDeck, "six of Clubes")
 
 	cardsDeck.print()
+
+	fmt.Println("--------------------------")
+	newCardsDeck := newDeck()
+	newCardsDeck.print()
+
 }
 
 func newCard() string {
